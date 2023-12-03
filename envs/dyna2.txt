@@ -1,0 +1,7 @@
+num_x_states = 9
+num_y_states = 6
+num_actions = 4
+goal_state = 8
+reward_at_goal = 1
+start_state = 48
+blocked_states = [28, 29, 30, 31, 32, 33, 34, 35]

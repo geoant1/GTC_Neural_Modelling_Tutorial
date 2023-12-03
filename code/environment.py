@@ -11,6 +11,7 @@ class Environment:
         '''
 
         self.__dict__.update(**p)
+        self.num_states = self.num_x_states * self.num_y_states
         self._generate_env_model()
 
         return None
@@ -60,7 +61,7 @@ class Environment:
         if j == 0: # left end
             if a == 2: # move left
                 return s, r
-        elif j == self.num_x_states: # right end
+        elif j == self.num_x_states - 1: # right end
             if a == 3: # move right
                 return s, r
 
@@ -74,6 +75,14 @@ class Environment:
             ni, nj = i, j+1
 
         s1 = self._convert_coords_to_state(ni, nj)
+
+        # check blocked states
+        if s1 in self.blocked_states:
+            return s, r
+        
+        # check if goal
+        if s1 == self.goal_state:
+            r = self.reward_at_goal
 
         return s1, r
     
