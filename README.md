@@ -1,2 +1,2 @@
-# GTC_Neural_Modelling_Tutorial
+# GTC Neural Modelling Tutorial
 Assignment for the MF/MB lecture
