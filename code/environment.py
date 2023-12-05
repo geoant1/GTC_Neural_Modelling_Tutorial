@@ -23,7 +23,7 @@ class Environment:
         '''
 
         self.T = np.zeros((self.num_states, self.num_actions, self.num_states))
-        self.R = np.zeros((self.num_states, self.num_actions))
+        self.R = np.zeros((self.num_states, self.num_actions), dtype=int)
 
         for s in range(self.num_states):
             for a in range(self.num_actions):
