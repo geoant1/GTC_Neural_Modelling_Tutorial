@@ -10,3 +10,11 @@ To get started, you can clone this git repository by navigating to whatever fold
 Finally, there is also a file named `requirements.txt`. This file can be used to create a virtual conda environment which will also install all the dependencies you need for this assignment. Navigate to the folder containing this file and execute:
 
 `conda create -n gtc --file requirements.txt`
+
+Note that I'm using linux (as you can see in the `requirements.txt` file). I haven't tested this on other operating systems. If it doesn't work for you then please manually install the necessary packages using `conda` or `pip`. Below is the complete list:
+- `numpy`
+- `scipy`
+- `matplotlib`
+- `jupyterlab`
+
+Good luck!
