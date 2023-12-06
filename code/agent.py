@@ -147,6 +147,8 @@ class DynaAgent(Environment):
 
         # complete the code
 
+        return None
+
     def _plan(self, num_planning_updates):
 
         '''
