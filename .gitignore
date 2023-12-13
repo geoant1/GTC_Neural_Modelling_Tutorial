@@ -1,3 +1,3 @@
-agent_complete.py
-assignment_complete.ipynb
 __pycache__
+slides/*
+!slides/presentation.pdf
